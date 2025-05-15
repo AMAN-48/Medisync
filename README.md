@@ -1,52 +1,156 @@
-MediSync - Doctor Appointment Booking App
+
+# Medisync-Doctor Appointment Booking App
+
 MediSync is a health-tech platform that allows patients to discover, book, and pay for doctor appointments online. It streamlines the connection between patients and healthcare professionals using a user-friendly interface and secure payment processing via Razorpay.
 
-❓ Problem Statement
-Make a digital healthcare platform where:
+
+
+
+## ❓ Problem Statement
+
+ Make a digital healthcare platform where:
 Patients can explore available doctors
 Appointments can be booked directly through the application
-Payments can be securely processed online
+Payments can be securely processed online.
 
-Note: Razorpay is used for handling secure transactions for appointments.
+Note- Razorpay is used for handling secure transactions for appointments.
 
-🛠 Technology Stack
-Frontend: HTML, CSS, JavaScript, Bootstrap
-Backend / Server: Node.js, Express.js
-Database: MongoDB (or MySQL if used)
-Payment Gateway: Razorpay Integration
-Authentication: Basic login / OTP (if implemented)
 
-✅ Features
-Doctor listing with specialization and fees
-User-friendly appointment scheduling
-Secure online payments using Razorpay
-Confirmation messages on successful booking
 
-⚙️ Setup Instructions
-Clone the repository
 
-git clone https://github.com/your-username/medisync.git
+
+## Documentation
+
+[Documentation](https://1drv.ms/p/c/2c82f468193248ca/EYCCnrJZAtFNqXmAgdzTua4BQ3XZxlZcqg1bstJzUuee1A?e=XgQ8BO)
+
+
+## Features
+
+- Doctor listing with specialization and fees
+- User-friendly appointment scheduling
+- Secure online payments using Razorpay
+- Confirmation messages on successful booking
+
+
+
+## Setup Instruction
+
+
+```bash
+ Clone the repository
+
+git clone https://github.com/AMAN-48/medisync.git
 cd medisync
 
-Install dependencies
-npm install
+```
+    
+## Install Dependencies
+```bash
+-npm install
+```
 
-Configure .env
+
+## Configure .env
+
 RAZORPAY_KEY_ID=your_key_id
 RAZORPAY_KEY_SECRET=your_key_secret
 MONGO_URI=your_mongodb_uri
 
-Run the application
-npm start
+## Run Locally
 
-🔒 Razorpay Integration
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## 🔒 Razorpay Integration
+
 Patients are redirected to Razorpay’s secure checkout.
 Once payment is successful, appointment data is saved.
 Payment confirmation shown with booking summary.
 
-Future Scope
+## Tech Stack
+
+**Client:**  React, Redux, TailwindCSS
+
+**Server:** Node, Express
+
+**Database:** MongoDB
+
+
+
+
+## Future Scope
+
 Video consultation module
+
 Prescription management
+
 SMS/email appointment reminders
+
 Doctor dashboard & analytics
 
+
+## Work Flow of medisync
+
+[User Opens MediSync App]
+
+             |
+             v
+   [Patient Login / Register]
+
+             |
+             v
+   [Browse Doctors List Page]
+
+             |
+             v
+ [Select Doctor + Choose Slot]
+
+             |
+             v
+   [Initiate Payment (Razorpay)]
+
+             |
+             v
+   [Payment Successful?]
+
+         /       \
+       Yes        No
+       |           |
+       v           v
+[Appointment     [Show
+ Confirmed] OR   Error Message]
+ 
+       |
+       v
+[Show Booking Summary to Patient]
+
+       |
+       v
+ [Notify Doctor of Appointment]
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://my-portfolio48.netlify.app/ )
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aman-tiwary-ab4262271)
